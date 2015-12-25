@@ -47,6 +47,7 @@ function show(index){
 }
 
 function start(e) {
+    oLis[0].id="";
     this.start = e.changedTouches[0].pageY;
 }
 function move(e) {
@@ -63,6 +64,7 @@ function move(e) {
         }
         arguments[0].className = "";
         arguments[0].firstElementChild.id="";
+        oPs[arguments[1]].className="";
     })
     if (changePos > 0) {/*往下滑*/
         var pos = -winH+changePos;
