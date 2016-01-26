@@ -49,15 +49,15 @@
             window.setTimeout(function () {
                 setTran(false);
                 pageList.forEach(function (cur, i) {
-                    //cur.className = i === index ? "move"+i : null;
-                    cur.className ="";
+                    cur.className = i === index ? "move"+i : null;
+                    //cur.className ="";
                 });
-                if(index==1){
-                    var oList = document.querySelectorAll(".page2>div");
-                    for (var i = 0; i < oList.length; i++) {
-                        oList[i].className = "move1";
-                    }
-                }
+                //if(index==1){
+                //    var oList = document.querySelectorAll(".page2>div");
+                //    for (var i = 0; i < oList.length; i++) {
+                //        oList[i].className = "move1";
+                //    }
+                //}
             }, 500);
             /*if(index==1){
                 window.setTimeout(function () {
@@ -102,7 +102,7 @@
             window.setTimeout(function () {
                 setTran(false);
                 pageList.forEach(function (cur, i) {
-                    cur.className = i === index ? "move0" : null;
+                    cur.className = i === index ? "move"+index : null;
                 });
             }, 500);
 

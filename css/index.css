@@ -55,17 +55,17 @@ html,body,.outer{
 
 }
 .inner>div:nth-child(1){
-     background: url(../img/bg1.jpg) no-repeat;
+     background: url(../img/qiqiu.png) no-repeat;
      background-size: 100% 100%;
  }
 .inner>div:nth-child(2){
-    background: url(../img/2.png) no-repeat;
+    background: url(../img/15.jpg) no-repeat;
 }
 .inner>div:nth-child(3){
     background: url(../img/16.jpg) no-repeat;
     background-size: 100% 100%;
 }
-.inner>div:nth-child(4){
+.inner>div:nth-child(5){
     background: url(../img/bg2.gif) no-repeat;
     background-size: 100% 100%;
 }
@@ -112,7 +112,8 @@ html,body,.outer{
     left: 50%;
     margin-top: -130px;
     margin-left: -130px;
-    border:1px dashed rgb(70,175,232);
+    =border:1px dashed rgb(70,175,232);
+    border:1px dashed #ffffff;
     border-radius: 50%;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -129,11 +130,12 @@ html,body,.outer{
 .one-info{
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 46%;
     margin: -25px 0 0 -115px;
     width: 230px;
     height: 50px;
-    color: rgb(70,175,232);
+    =color: rgb(70,175,232);
+    color:#ffffff;
     text-align: center;
 }
 .one-info span{
@@ -225,7 +227,8 @@ html,body,.outer{
     animation-delay: 0.6s;
 }
 
-.page2 div.move1 {
+/*.page2 div.move1 {*/
+.inner > div.move1 .page2 div{
     -webkit-animation-name: page2Move;
     animation-name: page2Move;
 
@@ -316,29 +319,32 @@ html,body,.outer{
 @-webkit-keyframes audioMove {
     100%{
         -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 @keyframes audioMove {
     100%{
         -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
 /*---------------page3------------------*/
 #line{
-    width: 20%;
+    width: 100%;
     height: 100%;
 
 }
 #line img{
-    width: 100%;
+    width: 20%;
     height: 80%;
     =background-size: auto;
-    margin-top: 85%;
+    margin-top: 15%;
     margin-left: 0;
     float: left;
 }
-#line .img2{
+.inner>div.move2 #line .img2{
+/*#line .img2{*/
     -webkit-animation: imgMove 2s linear 0s infinite both;
     animation: imgMove 2s linear 0s infinite both;
 }
@@ -358,4 +364,245 @@ html,body,.outer{
     to{
         height: 80%;
     }
+}
+/*#line div.mogu{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    =background: url("../img/mogu.gif") no-repeat;
+}*/
+#line div.info{
+    float: right;
+    width: 200px;
+    height: 100px;
+    =background: #4498c8;
+    margin-right: 15%;
+    box-shadow: 1px 1px 10px rgb(255,255,255);
+    color: #000;
+}
+#line div.info:nth-of-type(1){
+
+    margin-top: 15%;
+    margin-bottom: 20px;
+}
+#line div.info:nth-of-type(2){
+    height: 200px;
+}
+
+#line .info span{
+    -webkit-transform: translate(500px,0);
+    transform: translate(500px,0);
+}
+.move2 #line .info span{
+    -webkit-transform: translate(0,0);
+    -webkit-transition:1s;
+    transform: translate(0,0);
+    transition:1s
+}
+/*@keyframes spanShow {
+    0%{
+        opacity: 0;
+        left:500px
+    }
+    100% {
+        opacity: 1;
+        left:0
+    }
+}
+@-webkit-keyframes spanShow
+{
+    0%{
+        opacity: 0;
+        left:500px
+    }
+    100% {
+        opacity: 1;
+        left:0
+    }
+}
+.inner>div.move2 #line div span{
+    -webkit-animation: spanShow 2s ease-in;
+    animation: spanShow 2s ease-in;
+}*/
+/*------------------PAGE4 --------------------------*/
+/*.inner>div:nth-of-type(4) div{
+    position: absolute;
+}*/
+
+.img19,.img11{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+}
+.img19 img{
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.move3>div:nth-child(1) img {
+    -webkit-animation-name: img19Move;
+    animation-name: img19Move;
+
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes img19Move {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes img19Move {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+.img11 img{
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.move3 .img11 img{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+.contact{
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+    font-size: 20px;
+    color: #828282;
+}
+
+.contact p:nth-child(1){
+    margin-left: 15%;
+}
+.contact p:nth-child(2){
+    margin-left: 15%;
+
+}
+.contact p:nth-child(3){
+    font-size: 25px;
+    margin-left: 40%;
+    color: rgb(34,88,1);
+}
+
+.contact p{
+    -webkit-transform: translate(-500px,0);
+    transform: translate(-500px,0);
+}
+.move3 .contact p:nth-child(1){
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+    -webkit-transition:1s;
+    transition:1s;
+}
+
+
+@keyframes telMove {
+    0%{
+        -webkit-transform: translate(-500px,0);
+        transform: translate(-500px,0);
+    }
+    50%,75%,100%{
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+    62.5%{
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+    87.5%{
+        transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+    }
+}
+@-webkit-keyframes telMove {
+    0%{
+        -webkit-transform: translate(-500px,0);
+        transform: translate(-500px,0);
+    }
+    50%,75%,100%{
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+    62.5%{
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+    87.5%{
+        transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+    }
+}
+.move3 .contact p:nth-child(2){
+    animation: telMove 2s linear 1s 1 both;
+    -webkit-animation: telMove 2s linear 1s 1 both;
+}
+@keyframes callMove {
+    0%{
+        -webkit-transform: translate(-500px,0);
+        transform: translate(-500px,0);
+    }
+    50%{
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+    65%{
+        -webkit-transform: scale(1.5,1);
+        transform: scale(1.5,1);
+    }
+    80%{
+        -webkit-transform: scale(1,1.5);
+        transform: scale(1,1.5);
+    }
+    100%{
+        -webkit-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+
+}
+@-webkit-keyframes callMove {
+    0%{
+        -webkit-transform: translate(-500px,0);
+        transform: translate(-500px,0);
+    }
+    50%{
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+    65%{
+        -webkit-transform: scale(1.5,1);
+        transform: scale(1.5,1);
+    }
+    80%{
+        -webkit-transform: scale(1,1.5);
+        transform: scale(1,1.5);
+    }
+    100%{
+        -webkit-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+
+}
+.move3 .contact p:nth-child(3){
+    animation: callMove 2s linear 2s 1 both;
+    -webkit-animation: callMove 2s linear 2s 1 both;;
 }
