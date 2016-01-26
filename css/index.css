@@ -55,9 +55,9 @@ html,body,.outer{
 
 }
 .inner>div:nth-child(1){
-     background: url(../img/qiqiu.png) no-repeat;
-     background-size: 100% 100%;
- }
+    background: url(../img/qiqiu.png) no-repeat;
+    background-size: 100% 100%;
+}
 .inner>div:nth-child(2){
     background: url(../img/15.jpg) no-repeat;
 }
@@ -112,7 +112,7 @@ html,body,.outer{
     left: 50%;
     margin-top: -130px;
     margin-left: -130px;
-    =border:1px dashed rgb(70,175,232);
+=border:1px dashed rgb(70,175,232);
     border:1px dashed #ffffff;
     border-radius: 50%;
     -webkit-transform: rotate(0deg);
@@ -134,7 +134,7 @@ html,body,.outer{
     margin: -25px 0 0 -115px;
     width: 230px;
     height: 50px;
-    =color: rgb(70,175,232);
+=color: rgb(70,175,232);
     color:#ffffff;
     text-align: center;
 }
@@ -275,7 +275,7 @@ html,body,.outer{
 }
 .page2>div span{
 
-   = display: block;
+= display: block;
     font-size: 20px;
     text-align: center;
     font-weight: bold;
@@ -288,9 +288,9 @@ html,body,.outer{
     line-height: 60px;
 }
 .page2>div:nth-child(1){
-   /* position: absolute;
-    top: 0;
-    left: 0;*/
+    /* position: absolute;
+     top: 0;
+     left: 0;*/
     font-size: 30px;
     text-align: center;
     font-weight: bold;
@@ -301,7 +301,7 @@ html,body,.outer{
 }
 /*-------------------------------------------------------------*/
 .music{
-    =display: none;
+    display: none;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -338,13 +338,13 @@ html,body,.outer{
 #line img{
     width: 20%;
     height: 80%;
-    =background-size: auto;
+=background-size: auto;
     margin-top: 15%;
     margin-left: 0;
     float: left;
 }
 .inner>div.move2 #line .img2{
-/*#line .img2{*/
+    /*#line .img2{*/
     -webkit-animation: imgMove 2s linear 0s infinite both;
     animation: imgMove 2s linear 0s infinite both;
 }
@@ -375,7 +375,7 @@ html,body,.outer{
     float: right;
     width: 200px;
     height: 100px;
-    =background: #4498c8;
+=background: #4498c8;
     margin-right: 15%;
     box-shadow: 1px 1px 10px rgb(255,255,255);
     color: #000;
@@ -399,36 +399,8 @@ html,body,.outer{
     transform: translate(0,0);
     transition:1s
 }
-/*@keyframes spanShow {
-    0%{
-        opacity: 0;
-        left:500px
-    }
-    100% {
-        opacity: 1;
-        left:0
-    }
-}
-@-webkit-keyframes spanShow
-{
-    0%{
-        opacity: 0;
-        left:500px
-    }
-    100% {
-        opacity: 1;
-        left:0
-    }
-}
-.inner>div.move2 #line div span{
-    -webkit-animation: spanShow 2s ease-in;
-    animation: spanShow 2s ease-in;
-}*/
-/*------------------PAGE4 --------------------------*/
-/*.inner>div:nth-of-type(4) div{
-    position: absolute;
-}*/
 
+/*------------------PAGE4 --------------------------*/
 .img19,.img11{
     position: relative;
     text-align: center;
